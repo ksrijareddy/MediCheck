@@ -3,8 +3,7 @@ from sklearn.model_selection
 import train_test_split
 from sklearn.tree import 
 DecisionTreeClassifier
-from sklearn.metrices import 
-accuracy_score
+from sklearn.metrices import accuracy_score
 import pickle
 
 # Load the dataset
@@ -23,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Create the machine learning model
-model = DecisonTreeClassifier(random_state=42)
+model = DecisionTreeClassifier(random_state=42)
 
 # Train the model
 model.fit(X_train, y_train)
