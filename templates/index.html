@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MesiCheck - Health Risk Screening</title>
+
+    <title>MediCheck - Health Risk Screening</title>
 </head>
 
 <body>
 
-    <h1>MesiCheck</h1>
+    <h1>MediCheck</h1>
+
     <h2>AI-Powered Health Screening</h2>
 
     <p>Select the symptoms you are experiencing:</p>
@@ -19,46 +22,61 @@
             <input type="checkbox" name="fever" value="1">
             Fever
         </label>
+
         <br><br>
 
         <label>
             <input type="checkbox" name="cough" value="1">
             Cough
         </label>
+
         <br><br>
 
         <label>
             <input type="checkbox" name="fatigue" value="1">
             Fatigue
         </label>
+
         <br><br>
 
         <label>
             <input type="checkbox" name="headache" value="1">
             Headache
         </label>
+
         <br><br>
 
         <label>
             <input type="checkbox" name="sore_throat" value="1">
             Sore Throat
         </label>
+
         <br><br>
 
         <label>
             <input type="checkbox" name="breathing_difficulty" value="1">
             Breathing Difficulty
         </label>
+
         <br><br>
 
         <button type="submit">Check Risk</button>
 
     </form>
 
+
     {% if prediction %}
+
         <h2>Screening Result</h2>
-        <p>Predicted Risk Level: <strong>{{ prediction }}</strong></p>
+
+        <p>
+            Predicted Risk Level:
+            <strong>{{ prediction }}</strong>
+        </p>
+
     {% endif %}
 
+
 </body>
+
 </html>
